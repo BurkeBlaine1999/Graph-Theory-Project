@@ -1,4 +1,4 @@
-What is a Shunting-yard algorithm
+What is a Shunting-yard algorithm (https://www.youtube.com/watch?v=Wz85Hiwi5MY&t=38s) 
 =========================================================================
 A shunting-yard algorithm is a method for parsing mathematical expressions 
 specified in infix notation. It can produce either a postfix notation string, 
