@@ -1,0 +1,14 @@
+What is a Shunting-yard algorithm
+=========================================================================
+A shunting-yard algorithm is a method for parsing mathematical expressions 
+specified in infix notation. It can produce either a postfix notation string, 
+also known as Reverse Polish notation (RPN), or an abstract syntax tree (AST).
+
+
+What is a postfix notation
+=========================================================================
+It is a mathematical notation in which operators follow their operands
+
+What is an infix notation
+=========================================================================
+A Notation where operators appear between operands, for example a+b
