@@ -15,7 +15,6 @@ def followes(state,current): #Follow e's
                 #follow all of their epsilons too.
                 followes(x,current)
     
-    
 #==============================================================================================
 
 def match(regex,s): 

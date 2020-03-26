@@ -6,7 +6,7 @@ class State:
     label = None
     
     #Constructor for the class
-    def __init__(self,label=None,edges=[]):
-        self.edges = edges
+    def __init__(self,label=None,edges=None):
+        self.edges = edges if edges else
         self.label = label
  

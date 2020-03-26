@@ -56,16 +56,8 @@ def compile(infix):
             #pop 1 fragment off the stack 
             frag = nfa_stack.pop()
             #create new start and accept states    
-            accept=State()
-            start=State(edges=[frag.start]) 
-            frag.accept.edges = [frag.start,accept]
-
-        elif c == '-': #
-            #pop 1 fragment off the stack 
-            frag = nfa_stack.pop()
-            #create new start and accept states    
-            accept=State()
-            start=State(edges=[frag.start]) 
+            accept=State()# Empty Accept state
+            start=State(edges=[frag.start]) #new start point at the old start state
             frag.accept.edges = [frag.start,accept]
 
         else:
