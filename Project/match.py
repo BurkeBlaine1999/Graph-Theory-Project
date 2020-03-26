@@ -1,4 +1,4 @@
-from state import state
+from state import State
 from compiler import compile
 
 #Add a state to a set and follow all the epsilon aarows       

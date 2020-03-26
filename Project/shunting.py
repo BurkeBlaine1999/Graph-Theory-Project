@@ -5,7 +5,7 @@ def shunt(infix):  # Could probably made more efficient
     # Output list
     postfix = []
     # Operator Precedence. (Dictionary) 
-    prec = {'*': 100, '.': 80, '|': 60, ')': 40, '(': 20}
+    prec = {'*': 100,'+':95,'?':90, '.': 80, '|': 60, ')': 40, '(': 20}
 
     # Loop through the input one character at a time
     while infix:
@@ -29,7 +29,7 @@ def shunt(infix):  # Could probably made more efficient
             # Push c to the operator stack
             opers.append(c)
 
-        elif c in ['(', ')','.','|','*']:
+        elif c in ['(', ')','.','|','*','?','+']:
             # Push c to the operator stack
             opers.append(c)
         else:
@@ -40,7 +40,5 @@ def shunt(infix):  # Could probably made more efficient
     while opers:
         postfix.append(opers.pop())
 
-
     # Convert output list to String
     return ''.join(postfix)
-
