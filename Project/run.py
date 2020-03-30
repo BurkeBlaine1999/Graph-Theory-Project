@@ -1,7 +1,11 @@
-from match import *
+#Imports
+from match import match 
+from match import followes 
 
+#Local Variables
 sentinel = 1
 
+#While Loop for menu
 while sentinel ==1:
     print("--- Regular expression to NFA (non-deterministic finite automota) ---\n")
     print("Would you like to ..")
