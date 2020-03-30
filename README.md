@@ -35,7 +35,7 @@ Version 1.0
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/BurkeBlaine1999/Graph-Theory-Project/blob/master/LICENSE) file for details
 
 ## Acknowledgments
 
