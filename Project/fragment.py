@@ -2,8 +2,7 @@ from state import State
 
 # Fragment
 
-# Fragments are pieces of NFA that are pu
-
+# Fragments are pieces of NFA that are broken up into seperate parts
 # has 2 things in it
 # 1 - the start state 
 # 2- the accept state

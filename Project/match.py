@@ -50,5 +50,3 @@ def match(regex,s):
     
     # Ask the NFA if it matches the string s
     return nfa.accept in current
-
-print(match("a.b|b*","bbbbbb"))
