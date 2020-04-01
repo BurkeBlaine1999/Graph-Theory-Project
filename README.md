@@ -18,9 +18,9 @@ Turn a regular expression into an NON-deterministic finite automaton (NFA)
 
 2.Chose to either..
 
-* 1) Make a conversion of a regex to  NFA(Allows you to enter a regular expression and test data)
-* 2) Project Info(Displays info on project and thompsons construct)
-* 3) Exit
+ 1) Make a conversion of a regex to  NFA(Allows you to enter a regular expression and test data)
+ 2) Project Info(Displays info on project and thompsons construct)
+ 3) Exit
 
 ## Built With
 
