@@ -46,3 +46,4 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 * [Stack Overflow](https://stackoverflow.com/) - Helped with debugging 
 * [Barry Brown](https://www.youtube.com/watch?v=RYNN-tb9WxI&t=110s) - Youtube video explaining regex to NFA
 * [Made by Evan](http://madebyevan.com/fsm/) - Provided a Finite State Machine Designer to draw my automaton
+"# Graph-Theory-Project" 
