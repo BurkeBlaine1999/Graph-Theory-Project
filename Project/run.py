@@ -1,3 +1,5 @@
+#Runner class , Call this to run the program
+
 #Imports
 from match import match 
 from match import followes 
@@ -18,10 +20,10 @@ while sentinel ==1:
         data=input("Enter your test data:") 
         isTrue = match(Query,data)
 
-        if isTrue == True:
+        if isTrue == True: 
             print("Your regular Expression " + Query + " when given the data " + data + " returns True!")
         elif isTrue == True:
-            print("Your regular Expression " + Query + " when given the data ' " + data + " ' returns False!")   
+            print("Your regular Expression " + Query + " when given the data " + data + " returns False!")   
     
     elif Choice == 2:
         print("\nThompsons Construction is a method of transforming a\nregular expression into an equivalent nondeterministic finite automaton(NFA)")
