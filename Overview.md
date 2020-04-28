@@ -39,9 +39,10 @@ When running the applicaion you must navigate to the 'project' directory and ent
  
  ### Shunting yard algorithm
  The Shunting yard algorithm is a method for parsing mathematical expressions specified in infix notation.
+ I used it so I could could produce a postfix notation from an infix notation.
  
  
-  In my code I created a list  in order to append and pop items off and onto the stack.
+  In my code I created a list in order to append and pop items off and onto the stack.
  
 > ```
 >   infix = list(infix)[::-1]
@@ -51,11 +52,29 @@ When running the applicaion you must navigate to the 'project' directory and ent
 >   postfix = []
 > ```
 
-
-I also had to assign each operator precedence or importance in order to  remove brackets
+I also had to assign each operator precedence or importance
 > ```
 >   prec = {'*': 100,'+':95,'?':90, '.': 80, '|': 60, ')': 40, '(': 20}
 > ```
+
+With brackets ,  I used the code below. It works by adding the character to the 'c' variable I then checks to see if it is a bracket or not. If it is a bracket the code inside the brackets is run first.
+> ```
+> while infix:
+>      # Pop a character from the input
+>       c = infix.pop()
+>
+>    if c == '(':
+>         # Push and open to the opers stack
+>         opers.append(c)
+>    elif c == ')':
+>        # Pop the operators stack until you find an open bracket
+>         while opers[-1] != '(':
+>              postfix.append(opers.pop())
+>               # Get rid of the '('
+>         opers.pop()
+> ```
+
+
 
  ### Thompsons construction algorithm
  
