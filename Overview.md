@@ -112,6 +112,32 @@ We then pop all the operators into the outputand return the postfix.
 Created by [ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson) ,Thompson's construction algorithm  is a method of transforming a regular expression into an equivalent nondeterministic finite automaton (NFA).As stated above , an automaton performs a range of functions according to a predetermined set of coded instructions. The language accepted by finite automata can be easily described by simple expressions called Regular Expressions. Regular expressions are used to match character combinations in strings.
 
 
+There are several different classes used.
+
+#### 1.)Match.py
+When it comes to my match.py class it contains the followes and match function.
+
+In the followes function it simply takes a state and adds it to a set and then it follows all the epsilon arrows.
+
+def followes(state,current): #Follow e's
+   
+> ```
+>  def followes(state,current): #Follow e's
+>     #Only do something when we havent already seen the state
+>     if state not in current:       
+>     #Put the state into current
+>     current.add(state)
+>     #ee weather state is labelled by e/epsilon
+>     if state.label is None:
+>     #Loop through the states pointed to by this state.
+>     for x in state.edges:
+>     #follow all of their epsilons too.
+>     followes(x,current)
+> ```
+
+## <div align="center">References</div>
+
+
 
 
 
