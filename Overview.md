@@ -57,7 +57,9 @@ I also had to assign each operator precedence or importance
 >   prec = {'*': 100,'+':95,'?':90, '.': 80, '|': 60, ')': 40, '(': 20}
 > ```
 
-With brackets ,  I used the code below. It works by adding the character to the 'c' variable I then checks to see if it is a bracket or not. If it is a bracket the code inside the brackets is run first.
+
+The code below would check to see if the character is a bracket or not. If an opening bracket is detected it is pushed to the operators stack and if a closing bracket is detected it searches for the opening bracket to get rid of it.
+
 > ```
 > while infix:
 >      # Pop a character from the input
@@ -74,12 +76,41 @@ With brackets ,  I used the code below. It works by adding the character to the 
 >         opers.pop()
 > ```
 
+If 'c' is not a bracket we then check to see if its in the precendence list or 'prec'. If it is , it's added to the operators stack and if it is not it's added to the chraracter output.
 
+>```
+>elif c in prec:
+>            # Push any operators onto the operators stack that have higher Precedence to the output
+>            while opers and prec[c] < prec[opers [- 1]]:
+>                postfix.append(opers.pop())
+>            # Push C onto the operator Stack
+>            opers.append(c)
+>
+>       elif c in ['(', ')','.','|','*','?','+']:
+>           # Push C onto the operator Stack
+>          opers.append(c)
+>       else:
+>          # Push out characters to the output
+>          postfix.append(c)
+>```
+
+We then pop all the operators into the outputand return the postfix.
+
+>```
+>   # Pop all operators to the output
+>   while opers:
+>       postfix.append(opers.pop())
+>
+>    # Convert output list to String
+>   return ''.join(postfix)
+ >```
+
+<hr>
 
  ### Thompsons construction algorithm
  
 Created by [ken Thompson](https://en.wikipedia.org/wiki/Ken_Thompson) ,Thompson's construction algorithm  is a method of transforming a regular expression into an equivalent nondeterministic finite automaton (NFA).As stated above , an automaton performs a range of functions according to a predetermined set of coded instructions. The language accepted by finite automata can be easily described by simple expressions called Regular Expressions. Regular expressions are used to match character combinations in strings.
-
+----
 
 
 
