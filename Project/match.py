@@ -18,9 +18,9 @@ def followes(state,current): #Follow e's
 #==============================================================================================
 
 def match(regex,s): 
-    #this funciton will return true if and only if the regular expresion regex
-    # fully matches the string s. It returns false otherwise
-
+    """this funciton will return true if and only if the regular expresion regex
+     fully matches the string s. It returns false otherwise
+    """ 
     #Compile the regular expression into an nfa
     nfa = compile(regex)
     
@@ -50,3 +50,4 @@ def match(regex,s):
     
     # Ask the NFA if it matches the string s
     return nfa.accept in current
+

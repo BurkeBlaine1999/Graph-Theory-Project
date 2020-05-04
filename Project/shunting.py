@@ -5,12 +5,14 @@ def shunt(infix):  # Could probably made more efficient
     # Postfix regular expression
     postfix = []
 
-    # Operator Precedence. (Dictionary) 
-    # --> Sets some operators to be more important than others
+    """Operator Precedence. (Dictionary) 
+     --> Sets some operators to be more important than others
+    """
     prec = {'*': 100,'+':95,'?':90, '.': 80, '|': 60, ')': 40, '(': 20}
-
-    # Loop through the input one character at a time
-    # in order to get rid of the brackets
+   
+    """Loop through the input one character at a time
+    in order to get rid of the brackets
+    """
     while infix:
         # Pop a character from the input
         c = infix.pop()

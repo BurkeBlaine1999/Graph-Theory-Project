@@ -24,7 +24,7 @@ def OrOperator(nfa_stack):
 
     return(start,accept)   
             
-def KleeneyOperator(nfa_stack):
+def KleeneOperator(nfa_stack):
     #pop 1 fragment off the stack 
     frag = nfa_stack.pop()
     #create new start and accept states

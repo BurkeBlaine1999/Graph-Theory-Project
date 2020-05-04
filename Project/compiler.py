@@ -20,7 +20,7 @@ def compile(infix):
         elif c == '|':#Or
             start , accept = OrOperator(nfa_stack)             
         elif c == '*':# 0 or many
-            start , accept = KleeneyOperator(nfa_stack)            
+            start , accept = KleeneOperator(nfa_stack)            
         elif c == '?': #1 OR 0
             start , accept = QuestionOperator(nfa_stack)  
         elif c == '+': #1 OR More
