@@ -29,9 +29,19 @@ When running the applicaion you must navigate to the 'project' directory and ent
     for example "python run.py -r a.b -d ab" . -r being yor regular expression and -d being your sample data
   * The result will then be printed to the command prompt.
   
-## <div align="center">Running the premade Tests</div>
+## <div align="center">Testing</div>
 
-<div align="center">------------------------------------TO BE COMPLETED------------------------------------</div>
+When it came to testing my code i added pre-written tests so that I could ensure the code functions as it should.
+These tests would work by having a regular expression , sample input data and a true or false output based on if they data matches the regular expression!
+
+For example if i put "a|b" which means it can be a OR b as my regular expression , "a" as my input data and True as the result it will return true. 
+> ```
+> ["a|b","a",True].
+> ```
+but if I changed my input data to "c" the code would fail as it would be incorrect!
+> ```
+> ["a|b","c",True].
+> ```
 
  ## <div align="center">Algorithms Used</div>
    
