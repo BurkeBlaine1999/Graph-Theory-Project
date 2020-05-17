@@ -10,7 +10,7 @@ parser = argparse.ArgumentParser(description='Enter a regular expression and som
 parser.add_argument('-v','--version', action='version',version='%(prog)s 1.0')
 #parser.add_argument('-t','--test',help='Runs premade tests.',action='version',version='Ensures the code is working as expected!')
 parser.add_argument('-i','--info', help='Explains what thompsons construct is.', action='version',version='Thompsons Construction is a method of transforming a \n regular expression into an equivalent nondeterministic finite automaton(NFA)')
-parser.add_argument('-e','--example',help='Returns an example input.',action='version',version='Try entering " python run.py -r a.b -d ab "')
+parser.add_argument('-e','--example',help='Returns an example input.',action='version',version='Try entering " python run.py -r "a.b" -d ab "')
 parser.add_argument('-r','--regex',help='Enter a regular expression.')
 parser.add_argument('-d','--data',help='Enter your test data for your regular expression.')
 args=parser.parse_args()
